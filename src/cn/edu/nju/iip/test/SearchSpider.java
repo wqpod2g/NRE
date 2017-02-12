@@ -76,7 +76,7 @@ public class SearchSpider extends BreadthCrawler {
 		try{
 			logger.info("************360SearchSpider start************");
 			SearchSpider crawler = new SearchSpider("crawl", true);
-			filewriter = new FileWriter("resources/temp.txt");
+			filewriter = new FileWriter("resources/temp.dat");
 			crawler.setThreads(2);
 			crawler.setTopN(50000);
 			crawler.start(4);

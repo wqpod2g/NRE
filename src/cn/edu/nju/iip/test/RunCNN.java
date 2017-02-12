@@ -23,18 +23,18 @@ public class RunCNN {
 		CNN cnn = new CNN(builder, 50);
 		
 		//导入数据集
-		String fileName = "dataset/train.data";
+		String fileName = "resources/train.data";
 		Dataset dataset = Dataset.load(fileName, ",", 784);
 		cnn.train(dataset, 50);//
-		String modelName = "model/model.cnn";
+		String modelName = "resources/model.cnn";
 		//cnn.saveModel(modelName);		
 		dataset.clear();
 		dataset = null;
 		
 		//预测
 		// CNN cnn = CNN.loadModel(modelName);	
-		Dataset testset = Dataset.load("dataset/test.format", ",", -1);
-		cnn.predict(testset, "dataset/test.predict");
+		Dataset testset = Dataset.load("resources/test.format", ",", -1);
+		cnn.predict(testset, "resources/test.predict");
 	}
 
 	public static void main(String[] args) {
