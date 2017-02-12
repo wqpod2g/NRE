@@ -1,0 +1,879 @@
+2017-02-12 10:56:58   INFO SearchSpider:77 -************360SearchSpider start************
+2017-02-12 10:56:58   INFO Crawler:104 -start depth 1
+2017-02-12 10:56:58   INFO Fetcher:349 -open generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 10:56:58   INFO Fetcher:351 -init segmentWriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 10:56:59   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 10:57:00   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=腾讯+投资&rank=pdate&src=srp&tn=news
+2017-02-12 10:57:00   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 10:57:01   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 10:57:02   INFO HttpRequest:134 -redirect from http://ssxd.mediav.com/s?type=2&r=20&pinfo=&mv_ref=news%2Eso%2Ecom&enup=CAABctRRzwgAAs9R1HIA&mvid=NjQ3MzE2ODcyNTk1NjEwMTIwMjAwMTc&bid=1126267ee521cf68&price=AAAAAFifzvsAAAAAAAqoN8B0mhlZHl0eO4zQbA==&finfo=DAABCAABAAADGQgAAgAAAJwEAAM/cRlCsQ9dpQAIAAIAAAADCgADVgjLNaSezC8IAAQAAAC+CAAIAHkAkAoACQAAAAAABgAUBgAKAAAA&ugi=FZjsDhXcrkBMFQIV7AIV9AIVAAAVvK3z3AMA&uai=FbLqzQElAhUCFqSB6YmZh+GIrAEV8Aclt+aB5gUA&ubi=FZrjJBWOl78BFdbJtg0V4NOrRRUGFRwW0P/G+hQWpIH+8KLN5YisATQCFqiAMCUGFefL+ccJAA&clickid=0&csign=72940306b2f47037&url=http%3A%2F%2Fapp%2Etanwan%2Ecom%2Fhtmlcode%2F7152%2Ehtml to http://app.tanwan.com/htmlcode/7152.html
+2017-02-12 10:57:02   INFO ContentExtractor:177 -news content extraction failed,extraction abort
+java.lang.Exception: extraction failed
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getContentElement(ContentExtractor.java:165)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNews(ContentExtractor.java:174)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByDoc(ContentExtractor.java:487)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByHtml(ContentExtractor.java:499)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByUrl(ContentExtractor.java:506)
+	at cn.edu.nju.iip.test.SearchSpider.visit(SearchSpider.java:58)
+	at cn.edu.hfut.dmic.webcollector.fetcher.Fetcher.visit(Fetcher.java:506)
+	at cn.edu.hfut.dmic.webcollector.fetcher.Fetcher$FetcherThread.run(Fetcher.java:283)
+2017-02-12 10:57:02   INFO Fetcher:373 --activeThreads=0, spinWaiting=0, fetchQueue.size=0
+2017-02-12 10:57:02   INFO Fetcher:414 -clear all activeThread
+2017-02-12 10:57:02   INFO Fetcher:419 -close generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 10:57:02   INFO Fetcher:421 -close segmentwriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 10:57:02   INFO BerkeleyDBManager:150 -start merge
+2017-02-12 10:57:02   INFO BerkeleyDBManager:153 -merge fetch database
+2017-02-12 10:57:02   INFO BerkeleyDBManager:164 -merge link database
+2017-02-12 10:57:02   INFO BerkeleyDBManager:174 -end merge
+2017-02-12 10:57:02   INFO Crawler:126 -depth 1 finish: 
+	TOTAL urls:	1
+	TOTAL time:	4 seconds
+2017-02-12 10:57:02   INFO Crawler:104 -start depth 2
+2017-02-12 10:57:02   INFO Fetcher:349 -open generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 10:57:02   INFO Fetcher:351 -init segmentWriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 10:57:03   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=2&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:03   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=10&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:03   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=7
+2017-02-12 10:57:04   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=6
+2017-02-12 10:57:05   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=3&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:05   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=6
+2017-02-12 10:57:06   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=6
+2017-02-12 10:57:07   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=6
+2017-02-12 10:57:08   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=4&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:08   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=5
+2017-02-12 10:57:09   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=5
+2017-02-12 10:57:10   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=5
+2017-02-12 10:57:11   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=5&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:11   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 10:57:11   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:11   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:11   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:11   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:12   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=3
+2017-02-12 10:57:12   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:12   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:12   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:13   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:13   INFO HttpRequest:134 -redirect from http://www.iliema.com/article-312105-1.html to http://www.iliema.com/article-312105-1.html?WebShieldDRSessionVerify=e5jToEqUujPusMtGjXED
+2017-02-12 10:57:13   INFO HttpRequest:134 -redirect from http://www.iliema.com/article-312105-1.html?WebShieldDRSessionVerify=e5jToEqUujPusMtGjXED to http://www.iliema.com/article-312105-1.html
+2017-02-12 10:57:13   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:13   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 10:57:13   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:13   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:14   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=1
+2017-02-12 10:57:14   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:15   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:15   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=1
+2017-02-12 10:57:15   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:16   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:16   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=0
+2017-02-12 10:57:17   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=0
+2017-02-12 10:57:18   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=0
+2017-02-12 10:57:19   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=0
+2017-02-12 10:57:20   INFO Fetcher:373 --activeThreads=0, spinWaiting=0, fetchQueue.size=0
+2017-02-12 10:57:20   INFO Fetcher:414 -clear all activeThread
+2017-02-12 10:57:20   INFO Fetcher:419 -close generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 10:57:20   INFO Fetcher:421 -close segmentwriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 10:57:20   INFO BerkeleyDBManager:150 -start merge
+2017-02-12 10:57:20   INFO BerkeleyDBManager:153 -merge fetch database
+2017-02-12 10:57:20   INFO BerkeleyDBManager:164 -merge link database
+2017-02-12 10:57:20   INFO BerkeleyDBManager:174 -end merge
+2017-02-12 10:57:20   INFO Crawler:126 -depth 2 finish: 
+	TOTAL urls:	9
+	TOTAL time:	18 seconds
+2017-02-12 10:57:20   INFO Crawler:104 -start depth 3
+2017-02-12 10:57:21   INFO Fetcher:349 -open generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 10:57:21   INFO Fetcher:351 -init segmentWriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 10:57:21   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=11&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:22   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 10:57:22   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=12&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:22   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=13&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:22   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:22   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:22   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=1&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:22   INFO HttpRequest:134 -redirect from http://ssxd.mediav.com/s?type=2&r=20&pinfo=&mv_ref=news%2Eso%2Ecom&enup=CAABctRRzwgAAs9R1HIA&mvid=MTk2NDQ4ODA1MjE1NzEwMTIwMjAwMTc&bid=11262684632ea325&price=AAAAAFifzxEAAAAAAAQbp2GwcV25UZp9EPFnAQ==&finfo=DAABCAABAAADVwgAAgAAAKEEAAM/cmwL08I5iwAIAAIAAAADCgADIqbmTyx1cQUIAAQAAAC+CAAIAIJ2cAoACQAAAAAABgAYBgAKAAAA&ugi=FZjsDhXcrkBMFQIV7AIV9AIVAAAVvK3z3AMA&uai=FbLqzQElAhUCFqSynaTjze6mRRXwByXTp4gTAA&ubi=FZrjJBWOl78BFdbJtg0V4NOrRRUGFRwW0P/G+hQWpLKyi+2T86ZFNAIWsIAwJQYVwLzHmwgA&clickid=0&csign=72940306b2f47037&url=http%3A%2F%2Fapp%2Etanwan%2Ecom%2Fhtmlcode%2F7152%2Ehtml to http://app.tanwan.com/htmlcode/7152.html
+2017-02-12 10:57:22   INFO ContentExtractor:177 -news content extraction failed,extraction abort
+java.lang.Exception: extraction failed
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getContentElement(ContentExtractor.java:165)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNews(ContentExtractor.java:174)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByDoc(ContentExtractor.java:487)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByHtml(ContentExtractor.java:499)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByUrl(ContentExtractor.java:506)
+	at cn.edu.nju.iip.test.SearchSpider.visit(SearchSpider.java:58)
+	at cn.edu.hfut.dmic.webcollector.fetcher.Fetcher.visit(Fetcher.java:506)
+	at cn.edu.hfut.dmic.webcollector.fetcher.Fetcher$FetcherThread.run(Fetcher.java:283)
+2017-02-12 10:57:22   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=12&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:23   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=3
+2017-02-12 10:57:23   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=13&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:23   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:23   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:24   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=3
+2017-02-12 10:57:24   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=13&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:24   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:24   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:25   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=3
+2017-02-12 10:57:25   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=13&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:25   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:25   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:25   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=13&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:26   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 10:57:26   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:26   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:27   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 10:57:27   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:27   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:27   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:28   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=1
+2017-02-12 10:57:28   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:29   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=1
+2017-02-12 10:57:29   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:30   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=1
+2017-02-12 10:57:30   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:31   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=1
+2017-02-12 10:57:31   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:32   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=0
+2017-02-12 10:57:32   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:33   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 10:57:33   INFO ContentExtractor:188 -news title extraction failed
+java.lang.Exception: time not found
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getTime(ContentExtractor.java:228)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNews(ContentExtractor.java:186)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByDoc(ContentExtractor.java:487)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByHtml(ContentExtractor.java:499)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByUrl(ContentExtractor.java:506)
+	at cn.edu.nju.iip.test.SearchSpider.visit(SearchSpider.java:58)
+	at cn.edu.hfut.dmic.webcollector.fetcher.Fetcher.visit(Fetcher.java:506)
+	at cn.edu.hfut.dmic.webcollector.fetcher.Fetcher$FetcherThread.run(Fetcher.java:283)
+2017-02-12 10:57:34   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 10:57:35   INFO Fetcher:373 --activeThreads=0, spinWaiting=0, fetchQueue.size=0
+2017-02-12 10:57:35   INFO Fetcher:414 -clear all activeThread
+2017-02-12 10:57:35   INFO Fetcher:419 -close generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 10:57:35   INFO Fetcher:421 -close segmentwriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 10:57:35   INFO BerkeleyDBManager:150 -start merge
+2017-02-12 10:57:35   INFO BerkeleyDBManager:153 -merge fetch database
+2017-02-12 10:57:35   INFO BerkeleyDBManager:164 -merge link database
+2017-02-12 10:57:35   INFO BerkeleyDBManager:174 -end merge
+2017-02-12 10:57:35   INFO Crawler:126 -depth 3 finish: 
+	TOTAL urls:	6
+	TOTAL time:	14 seconds
+2017-02-12 10:57:35   INFO Crawler:104 -start depth 4
+2017-02-12 10:57:35   INFO Fetcher:349 -open generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 10:57:35   INFO Fetcher:351 -init segmentWriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 10:57:35   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=17&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:35   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E6%8A%95%E8%B5%84&pn=16&tn=news&rank=pdate&j=0&src=page
+2017-02-12 10:57:36   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=0
+2017-02-12 10:57:37   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 10:57:38   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 10:57:39   INFO Fetcher:373 --activeThreads=0, spinWaiting=0, fetchQueue.size=0
+2017-02-12 10:57:39   INFO Fetcher:414 -clear all activeThread
+2017-02-12 10:57:39   INFO Fetcher:419 -close generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 10:57:39   INFO Fetcher:421 -close segmentwriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 10:57:39   INFO BerkeleyDBManager:150 -start merge
+2017-02-12 10:57:39   INFO BerkeleyDBManager:153 -merge fetch database
+2017-02-12 10:57:39   INFO BerkeleyDBManager:164 -merge link database
+2017-02-12 10:57:39   INFO BerkeleyDBManager:174 -end merge
+2017-02-12 10:57:39   INFO Crawler:126 -depth 4 finish: 
+	TOTAL urls:	2
+	TOTAL time:	4 seconds
+2017-02-12 10:57:39   INFO SearchSpider:86 -************360SearchSpider finish************
+2017-02-12 11:04:55   INFO SearchSpider:77 -************360SearchSpider start************
+2017-02-12 11:04:56   INFO Crawler:104 -start depth 1
+2017-02-12 11:04:56   INFO Fetcher:349 -open generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 11:04:56   INFO Fetcher:351 -init segmentWriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 11:04:57   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:04:57   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=腾讯+京东&rank=pdate&src=srp&tn=news
+2017-02-12 11:04:58   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:04:58   INFO HttpRequest:134 -redirect from http://ssxd.mediav.com/s?type=2&r=20&pinfo=&mv_ref=news%2Eso%2Ecom&enup=CAAB2l6OVggAAlaOXtoA&mvid=NjU5MTQ1ODA1NTYwNDExMTIwMjAwMTc&bid=112626f616d06725&price=AAAAAFif0NgAAAAAAAs9BCrMIVi406nlLPE7bg==&finfo=DAABCAABAAADXQgAAgAAAKkEAAM/co8O3E5sLwAIAAIAAAADCgADYiHELFGg4agIAAQAAAC+CAAIAINg0AoACQAAAAAABgAUBgAKAAAA&ugi=FZjsDhXcrkBMFQIV7AIV9AIVAAAVvK3z3AMA&uai=FbLqzQElAhUCFsTt7YeIxd2hxAEV8Aclh46r3wgA&ubi=FZrjJBWOl78BFdbJtg0V4NOrRRUGFRwW0P/G+hQWxO2C75GL4qHEATQCFqiAMCUGFfKep+4NAA&clickid=0&csign=72940306b2f47037&url=http%3A%2F%2Fapp%2Etanwan%2Ecom%2Fhtmlcode%2F7152%2Ehtml to http://app.tanwan.com/htmlcode/7152.html
+2017-02-12 11:04:58   INFO ContentExtractor:177 -news content extraction failed,extraction abort
+java.lang.Exception: extraction failed
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getContentElement(ContentExtractor.java:165)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNews(ContentExtractor.java:174)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByDoc(ContentExtractor.java:487)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByHtml(ContentExtractor.java:499)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByUrl(ContentExtractor.java:506)
+	at cn.edu.nju.iip.test.SearchSpider.visit(SearchSpider.java:58)
+	at cn.edu.hfut.dmic.webcollector.fetcher.Fetcher.visit(Fetcher.java:506)
+	at cn.edu.hfut.dmic.webcollector.fetcher.Fetcher$FetcherThread.run(Fetcher.java:283)
+2017-02-12 11:04:59   INFO Fetcher:373 --activeThreads=0, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:04:59   INFO Fetcher:414 -clear all activeThread
+2017-02-12 11:04:59   INFO Fetcher:419 -close generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 11:04:59   INFO Fetcher:421 -close segmentwriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 11:04:59   INFO BerkeleyDBManager:150 -start merge
+2017-02-12 11:04:59   INFO BerkeleyDBManager:153 -merge fetch database
+2017-02-12 11:04:59   INFO BerkeleyDBManager:164 -merge link database
+2017-02-12 11:04:59   INFO BerkeleyDBManager:174 -end merge
+2017-02-12 11:04:59   INFO Crawler:126 -depth 1 finish: 
+	TOTAL urls:	1
+	TOTAL time:	3 seconds
+2017-02-12 11:04:59   INFO Crawler:104 -start depth 2
+2017-02-12 11:04:59   INFO Fetcher:349 -open generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 11:04:59   INFO Fetcher:351 -init segmentWriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 11:04:59   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=2&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:04:59   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=10&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:04:59   INFO ContentExtractor:177 -news content extraction failed,extraction abort
+java.lang.Exception: extraction failed
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getContentElement(ContentExtractor.java:165)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNews(ContentExtractor.java:174)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByDoc(ContentExtractor.java:487)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByHtml(ContentExtractor.java:499)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByUrl(ContentExtractor.java:506)
+	at cn.edu.nju.iip.test.SearchSpider.visit(SearchSpider.java:58)
+	at cn.edu.hfut.dmic.webcollector.fetcher.Fetcher.visit(Fetcher.java:506)
+	at cn.edu.hfut.dmic.webcollector.fetcher.Fetcher$FetcherThread.run(Fetcher.java:283)
+2017-02-12 11:04:59   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=3&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:00   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=6
+2017-02-12 11:05:01   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=6
+2017-02-12 11:05:01   INFO HttpRequest:134 -redirect from http://fz.comnews.cn/n/20170211/31864.html to http://fz.comnews.cn/n/20170211/31864.html?WebShieldDRSessionVerify=IjneLH7xy9zsZ6JteWn7
+2017-02-12 11:05:01   INFO HttpRequest:134 -redirect from http://fz.comnews.cn/n/20170211/31864.html?WebShieldDRSessionVerify=IjneLH7xy9zsZ6JteWn7 to http://fz.comnews.cn/n/20170211/31864.html
+2017-02-12 11:05:02   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=6
+2017-02-12 11:05:02   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=4&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:03   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=5
+2017-02-12 11:05:04   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=5&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:04   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:05:04   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:04   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:04   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:04   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:05   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:05:05   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:05   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:05   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:05   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:06   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:05:06   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:06   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:06   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:06   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:06   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:07   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=3
+2017-02-12 11:05:07   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:07   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:07   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:08   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=3
+2017-02-12 11:05:08   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:08   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:08   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:09   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=3
+2017-02-12 11:05:09   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:09   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:09   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:09   INFO ContentExtractor:188 -news title extraction failed
+java.lang.Exception: time not found
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getTime(ContentExtractor.java:228)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNews(ContentExtractor.java:186)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByDoc(ContentExtractor.java:487)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByHtml(ContentExtractor.java:499)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByUrl(ContentExtractor.java:506)
+	at cn.edu.nju.iip.test.SearchSpider.visit(SearchSpider.java:58)
+	at cn.edu.hfut.dmic.webcollector.fetcher.Fetcher.visit(Fetcher.java:506)
+	at cn.edu.hfut.dmic.webcollector.fetcher.Fetcher$FetcherThread.run(Fetcher.java:283)
+2017-02-12 11:05:09   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:10   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:05:10   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:10   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:11   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:11   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=1
+2017-02-12 11:05:11   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:12   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=1
+2017-02-12 11:05:12   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:13   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=1
+2017-02-12 11:05:13   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:13   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:14   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:05:15   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:05:16   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:05:17   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:05:18   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:05:19   INFO Fetcher:373 --activeThreads=0, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:05:19   INFO Fetcher:414 -clear all activeThread
+2017-02-12 11:05:19   INFO Fetcher:419 -close generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 11:05:19   INFO Fetcher:421 -close segmentwriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 11:05:19   INFO BerkeleyDBManager:150 -start merge
+2017-02-12 11:05:19   INFO BerkeleyDBManager:153 -merge fetch database
+2017-02-12 11:05:19   INFO BerkeleyDBManager:164 -merge link database
+2017-02-12 11:05:19   INFO BerkeleyDBManager:174 -end merge
+2017-02-12 11:05:19   INFO Crawler:126 -depth 2 finish: 
+	TOTAL urls:	9
+	TOTAL time:	20 seconds
+2017-02-12 11:05:19   INFO Crawler:104 -start depth 3
+2017-02-12 11:05:19   INFO Fetcher:349 -open generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 11:05:19   INFO Fetcher:351 -init segmentWriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 11:05:19   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=1&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:19   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=11&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:20   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:05:20   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=12&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:20   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=13&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:20   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:20   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:20   INFO HttpRequest:134 -redirect from http://ssxd.mediav.com/s?type=2&r=20&pinfo=&mv_ref=news%2Eso%2Ecom&enup=CAAB2l6OVggAAlaOXtoA&mvid=MzAyNDA1NjE1MTkwNTExMTIwMjAwMTc&bid=112626fbccefae67&price=AAAAAFif0O8AAAAAAAWWRjnBnrcJM9VPpOhVig==&finfo=DAABCAABAAADVwgAAgAAAH0EAAM/cmwL08I5iwAIAAIAAAADCgADJSxCKKjNlTUIAAQAAAC+CAAIAIJ2cAoACQAAAAAABgAUBgAKAAAA&ugi=FZjsDhXcrkBMFQIV7AIV9AIVAAAVvK3z3AMA&uai=FbLqzQElAhUCFsSi4NmTxJysShXwByXRpqqUDQA&ubi=FZrjJBWOl78BFdbJtg0V4NOrRRUGFRwW0P/G+hQWxKL1wJ2KoaxKNAIWqIAwJQYVkeLxmgEA&clickid=0&csign=72940306b2f47037&url=http%3A%2F%2Fapp%2Etanwan%2Ecom%2Fhtmlcode%2F7152%2Ehtml to http://app.tanwan.com/htmlcode/7152.html
+2017-02-12 11:05:20   INFO ContentExtractor:177 -news content extraction failed,extraction abort
+java.lang.Exception: extraction failed
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getContentElement(ContentExtractor.java:165)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNews(ContentExtractor.java:174)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByDoc(ContentExtractor.java:487)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByHtml(ContentExtractor.java:499)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByUrl(ContentExtractor.java:506)
+	at cn.edu.nju.iip.test.SearchSpider.visit(SearchSpider.java:58)
+	at cn.edu.hfut.dmic.webcollector.fetcher.Fetcher.visit(Fetcher.java:506)
+	at cn.edu.hfut.dmic.webcollector.fetcher.Fetcher$FetcherThread.run(Fetcher.java:283)
+2017-02-12 11:05:20   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=12&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:21   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=3
+2017-02-12 11:05:21   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=13&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:21   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:21   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:22   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=3
+2017-02-12 11:05:22   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=13&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:22   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:22   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:23   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=3
+2017-02-12 11:05:23   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=13&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:23   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:23   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:24   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=13&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:24   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:05:24   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:24   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:25   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:05:25   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:25   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:26   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:05:26   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:26   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:27   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:05:27   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:27   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:27   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:28   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:05:28   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E8%85%BE%E8%AE%AF+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:05:29   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:05:30   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:05:31   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:05:32   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:05:33   INFO Fetcher:373 --activeThreads=0, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:05:33   INFO Fetcher:414 -clear all activeThread
+2017-02-12 11:05:33   INFO Fetcher:419 -close generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 11:05:33   INFO Fetcher:421 -close segmentwriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 11:05:33   INFO BerkeleyDBManager:150 -start merge
+2017-02-12 11:05:33   INFO BerkeleyDBManager:153 -merge fetch database
+2017-02-12 11:05:33   INFO BerkeleyDBManager:164 -merge link database
+2017-02-12 11:05:33   INFO BerkeleyDBManager:174 -end merge
+2017-02-12 11:05:33   INFO Crawler:126 -depth 3 finish: 
+	TOTAL urls:	6
+	TOTAL time:	14 seconds
+2017-02-12 11:05:33   INFO Crawler:104 -start depth 4
+2017-02-12 11:05:33   INFO Fetcher:349 -open generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 11:05:33   INFO Fetcher:351 -init segmentWriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 11:05:34   INFO Fetcher:373 --activeThreads=0, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:05:34   INFO Fetcher:414 -clear all activeThread
+2017-02-12 11:05:34   INFO Fetcher:419 -close generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 11:05:34   INFO Fetcher:421 -close segmentwriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 11:05:34   INFO BerkeleyDBManager:150 -start merge
+2017-02-12 11:05:34   INFO BerkeleyDBManager:153 -merge fetch database
+2017-02-12 11:05:34   INFO BerkeleyDBManager:164 -merge link database
+2017-02-12 11:05:34   INFO BerkeleyDBManager:174 -end merge
+2017-02-12 11:05:34   INFO Crawler:126 -depth 4 finish: 
+	TOTAL urls:	0
+	TOTAL time:	1 seconds
+2017-02-12 11:05:34   INFO SearchSpider:86 -************360SearchSpider finish************
+2017-02-12 11:43:28   INFO SearchSpider:77 -************360SearchSpider start************
+2017-02-12 11:43:28   INFO Crawler:104 -start depth 1
+2017-02-12 11:43:28   INFO Fetcher:349 -open generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 11:43:28   INFO Fetcher:351 -init segmentWriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 11:43:29   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:43:29   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=阿里+京东&rank=pdate&src=srp&tn=news
+2017-02-12 11:43:30   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:43:31   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:43:32   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:43:32   INFO HttpRequest:134 -redirect from http://ssxd.mediav.com/s?type=2&r=20&pinfo=&mv_ref=news%2Eso%2Ecom&enup=CAABctRRzwgAAs9R1HIA&mvid=MjI2NTA4ODI0Mjk0MzExMTIwMjAwMTc&bid=1126293850576b38&price=AAAAAFif2eEAAAAAAAQ8oFkkV6Xlkayi9LerdQ==&finfo=DAABCAABAAADXQgAAgAAAIwEAAM/co8O3E5sLwAIAAIAAAADCgADIKIp5TJMougIAAQAAAC+CAAIAINg0AoACQAAAAAABgAYBgAKAAAA&ugi=FZjsDhXcrkBMFQIV7AIV9AIVAAAVvK3z3AMA&uai=FbLqzQElAhUCFsTgy+qzs5CiQRXwByX5pfXMCQA&ubi=FZrjJBWOl78BFdbJtg0V4NOrRRUGFRwW0P/G+hQWxODg0b35lKJBNAIWsIAwJQYVquGM0gIA&clickid=0&csign=72940306b2f47037&url=http%3A%2F%2Fapp%2Etanwan%2Ecom%2Fhtmlcode%2F7152%2Ehtml to http://app.tanwan.com/htmlcode/7152.html
+2017-02-12 11:43:32   INFO ContentExtractor:177 -news content extraction failed,extraction abort
+java.lang.Exception: extraction failed
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getContentElement(ContentExtractor.java:165)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNews(ContentExtractor.java:174)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByDoc(ContentExtractor.java:487)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByHtml(ContentExtractor.java:499)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByUrl(ContentExtractor.java:506)
+	at cn.edu.nju.iip.test.SearchSpider.visit(SearchSpider.java:58)
+	at cn.edu.hfut.dmic.webcollector.fetcher.Fetcher.visit(Fetcher.java:506)
+	at cn.edu.hfut.dmic.webcollector.fetcher.Fetcher$FetcherThread.run(Fetcher.java:283)
+2017-02-12 11:43:33   INFO Fetcher:373 --activeThreads=0, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:43:33   INFO Fetcher:414 -clear all activeThread
+2017-02-12 11:43:33   INFO Fetcher:419 -close generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 11:43:33   INFO Fetcher:421 -close segmentwriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 11:43:33   INFO BerkeleyDBManager:150 -start merge
+2017-02-12 11:43:33   INFO BerkeleyDBManager:153 -merge fetch database
+2017-02-12 11:43:33   INFO BerkeleyDBManager:164 -merge link database
+2017-02-12 11:43:33   INFO BerkeleyDBManager:174 -end merge
+2017-02-12 11:43:33   INFO Crawler:126 -depth 1 finish: 
+	TOTAL urls:	1
+	TOTAL time:	5 seconds
+2017-02-12 11:43:33   INFO Crawler:104 -start depth 2
+2017-02-12 11:43:33   INFO Fetcher:349 -open generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 11:43:33   INFO Fetcher:351 -init segmentWriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 11:43:34   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=2&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:34   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=10&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:34   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=7
+2017-02-12 11:43:35   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=7
+2017-02-12 11:43:36   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=6
+2017-02-12 11:43:36   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=3&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:37   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=6
+2017-02-12 11:43:38   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=6
+2017-02-12 11:43:39   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=6
+2017-02-12 11:43:40   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=5
+2017-02-12 11:43:40   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=4&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:41   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=5
+2017-02-12 11:43:42   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=5
+2017-02-12 11:43:43   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=5
+2017-02-12 11:43:44   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=5
+2017-02-12 11:43:45   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=5
+2017-02-12 11:43:46   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=5
+2017-02-12 11:43:47   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=5
+2017-02-12 11:43:48   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=5
+2017-02-12 11:43:49   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=5
+2017-02-12 11:43:50   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=5
+2017-02-12 11:43:50   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=5&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:51   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:43:51   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:51   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:51   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:51   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:52   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:43:52   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:52   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:52   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:52   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:53   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:43:53   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:53   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:53   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:53   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:54   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:43:54   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:54   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:54   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:54   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:55   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:43:55   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:55   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:55   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:55   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:56   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:43:56   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:56   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:56   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:56   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:57   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:43:57   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:57   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:57   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:57   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:58   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:43:58   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:58   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:58   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:58   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:59   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:43:59   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:59   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:59   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:43:59   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:00   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:00   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:00   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:00   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:00   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:01   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:01   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:01   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:01   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:01   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:02   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:02   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:02   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:02   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:02   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:03   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:03   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:03   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:03   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:03   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:04   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:04   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:04   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:04   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:04   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:05   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:05   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:05   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:05   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:05   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:06   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:06   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:06   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:06   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:06   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:07   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:07   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:07   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:07   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:07   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:08   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:08   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:08   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:08   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:08   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:09   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:09   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:09   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:09   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:09   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:10   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:10   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:10   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:10   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:10   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:11   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:11   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:11   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:11   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:11   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:12   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:12   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:12   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:12   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:12   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:13   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:13   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:13   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:13   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:13   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:14   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:14   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:14   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:14   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:14   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:15   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:15   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:15   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:15   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:15   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:16   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:16   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:16   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:16   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:16   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:17   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:17   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:17   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:17   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:17   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:18   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:18   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:18   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:18   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:18   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:19   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:19   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:19   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:19   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:19   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:20   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:20   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:20   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:20   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:20   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:21   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:21   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:21   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:21   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:21   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:21   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=6&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:22   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=3
+2017-02-12 11:44:22   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:22   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:22   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:23   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=3
+2017-02-12 11:44:23   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:23   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:23   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:24   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=3
+2017-02-12 11:44:24   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:24   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:24   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:25   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=7&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:25   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:44:25   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:25   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:26   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:44:26   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:26   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:27   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:44:27   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:27   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:28   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:44:28   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:28   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:29   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:44:29   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:29   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:30   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:44:30   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:30   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:31   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:44:31   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:31   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:32   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:44:32   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:32   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:33   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:44:33   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:33   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:34   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:44:34   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:34   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:35   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:44:35   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:35   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:36   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:44:36   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:36   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:37   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:44:37   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:37   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:38   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=8&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:38   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=1
+2017-02-12 11:44:38   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:39   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=1
+2017-02-12 11:44:39   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:40   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=1
+2017-02-12 11:44:40   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:41   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=9&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:41   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:44:42   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:44:43   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:44:44   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:44:45   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:44:46   INFO Fetcher:373 --activeThreads=0, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:44:46   INFO Fetcher:414 -clear all activeThread
+2017-02-12 11:44:46   INFO Fetcher:419 -close generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 11:44:46   INFO Fetcher:421 -close segmentwriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 11:44:46   INFO BerkeleyDBManager:150 -start merge
+2017-02-12 11:44:46   INFO BerkeleyDBManager:153 -merge fetch database
+2017-02-12 11:44:46   INFO BerkeleyDBManager:164 -merge link database
+2017-02-12 11:44:46   INFO BerkeleyDBManager:174 -end merge
+2017-02-12 11:44:46   INFO Crawler:126 -depth 2 finish: 
+	TOTAL urls:	9
+	TOTAL time:	73 seconds
+2017-02-12 11:44:46   INFO Crawler:104 -start depth 3
+2017-02-12 11:44:46   INFO Fetcher:349 -open generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 11:44:46   INFO Fetcher:351 -init segmentWriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 11:44:47   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=11&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:47   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:47   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=12&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:47   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=13&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:47   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:47   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:47   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=1&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:48   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:48   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=12&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:48   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=13&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:48   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:48   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:49   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:49   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=12&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:49   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=13&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:49   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:49   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:50   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=4
+2017-02-12 11:44:50   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=12&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:50   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=13&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:50   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:50   INFO Fetcher$FetchQueue:162 -  3. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:50   INFO HttpRequest:134 -redirect from http://ssxd.mediav.com/s?type=2&r=20&pinfo=&mv_ref=news%2Eso%2Ecom&enup=CAAB2l6OVggAAlaOXtoA&mvid=MDg2NjcxODI4NDc0NDExMTIwMjAwMTc&bid=1126294bd5ce073c&price=AAAAAFif2i8AAAAAAAI5Ww/QVfeNCuNnoB/DxQ==&finfo=DAABCAABAAADXQgAAgAAAKkEAAM/co8O3E5sLwAIAAIAAAADCgADE1wsICQTdqgIAAQAAAC+CAAIAINg0AoACQAAAAAABgAYBgAKAAAA&ugi=FZjsDhXcrkBMFQIV7AIV9AIVAAAVvK3z3AMA&uai=FbLqzQElAhUCFsSxic2VwpHcJhXwByW/g/+aCQA&ubi=FZrjJBWOl78BFdbJtg0V4NOrRRUGFRwW0P/G+hQWxLGetJ+IltwmNAIWsIAwJQYV9rW1gA8A&clickid=0&csign=72940306b2f47037&url=http%3A%2F%2Fapp%2Etanwan%2Ecom%2Fhtmlcode%2F7152%2Ehtml to http://app.tanwan.com/htmlcode/7152.html
+2017-02-12 11:44:50   INFO ContentExtractor:177 -news content extraction failed,extraction abort
+java.lang.Exception: extraction failed
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getContentElement(ContentExtractor.java:165)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNews(ContentExtractor.java:174)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByDoc(ContentExtractor.java:487)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByHtml(ContentExtractor.java:499)
+	at cn.edu.hfut.dmic.contentextractor.ContentExtractor.getNewsByUrl(ContentExtractor.java:506)
+	at cn.edu.nju.iip.test.SearchSpider.visit(SearchSpider.java:58)
+	at cn.edu.hfut.dmic.webcollector.fetcher.Fetcher.visit(Fetcher.java:506)
+	at cn.edu.hfut.dmic.webcollector.fetcher.Fetcher$FetcherThread.run(Fetcher.java:283)
+2017-02-12 11:44:51   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=12&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:51   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=3
+2017-02-12 11:44:51   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=13&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:51   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:51   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:52   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=3
+2017-02-12 11:44:52   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=13&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:52   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:52   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:53   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=3
+2017-02-12 11:44:53   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=13&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:53   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:53   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:54   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=3
+2017-02-12 11:44:54   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=13&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:54   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:54   INFO Fetcher$FetchQueue:162 -  2. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:55   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:44:55   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:55   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:55   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=13&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:56   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:44:56   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:56   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:57   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:44:57   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:57   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:58   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:44:58   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:58   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:59   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:44:59   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:44:59   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:00   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:00   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:00   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:01   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:01   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:01   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:02   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:02   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:02   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:03   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:03   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:03   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:04   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:04   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:04   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:05   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:05   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:05   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:06   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:06   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:06   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:07   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:07   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:07   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:08   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:08   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:08   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:09   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:09   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:09   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:10   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:10   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:10   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:11   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:11   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:11   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:12   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:12   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:12   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:13   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:13   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:13   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:14   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:14   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:14   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:15   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:15   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:15   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:16   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:16   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:16   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:17   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:17   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:17   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:18   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:18   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:18   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:19   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:19   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:19   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:20   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:20   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:20   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:21   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:21   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:21   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:22   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:22   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:22   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:23   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:23   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:23   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:24   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=2
+2017-02-12 11:45:24   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:24   INFO Fetcher$FetchQueue:162 -  1. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:25   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=14&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:25   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=1
+2017-02-12 11:45:25   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:26   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=1
+2017-02-12 11:45:26   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:27   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=1
+2017-02-12 11:45:27   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:28   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=1
+2017-02-12 11:45:28   INFO Fetcher$FetchQueue:162 -  0. http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:29   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=15&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:29   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:30   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:31   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:32   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:33   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:34   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:35   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:36   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:37   INFO Fetcher:373 --activeThreads=0, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:37   INFO Fetcher:414 -clear all activeThread
+2017-02-12 11:45:37   INFO Fetcher:419 -close generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 11:45:37   INFO Fetcher:421 -close segmentwriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 11:45:37   INFO BerkeleyDBManager:150 -start merge
+2017-02-12 11:45:37   INFO BerkeleyDBManager:153 -merge fetch database
+2017-02-12 11:45:37   INFO BerkeleyDBManager:164 -merge link database
+2017-02-12 11:45:37   INFO BerkeleyDBManager:174 -end merge
+2017-02-12 11:45:37   INFO Crawler:126 -depth 3 finish: 
+	TOTAL urls:	6
+	TOTAL time:	51 seconds
+2017-02-12 11:45:37   INFO Crawler:104 -start depth 4
+2017-02-12 11:45:37   INFO Fetcher:349 -open generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 11:45:37   INFO Fetcher:351 -init segmentWriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 11:45:38   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=16&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:38   INFO Fetcher:593 -fetch URL: http://news.so.com/ns?q=%E9%98%BF%E9%87%8C+%E4%BA%AC%E4%B8%9C&pn=17&tn=news&rank=pdate&j=0&src=page
+2017-02-12 11:45:38   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:39   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:40   INFO Fetcher:373 --activeThreads=2, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:41   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:42   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:43   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:44   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:45   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:46   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:47   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:48   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:49   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:50   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:51   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:52   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:53   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:54   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:55   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:56   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:57   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:58   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:45:59   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:46:00   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:46:01   INFO Fetcher:373 --activeThreads=1, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:46:02   INFO Fetcher:373 --activeThreads=0, spinWaiting=0, fetchQueue.size=0
+2017-02-12 11:46:02   INFO Fetcher:414 -clear all activeThread
+2017-02-12 11:46:02   INFO Fetcher:419 -close generator:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyGenerator
+2017-02-12 11:46:02   INFO Fetcher:421 -close segmentwriter:cn.edu.hfut.dmic.webcollector.plugin.berkeley.BerkeleyDBManager
+2017-02-12 11:46:02   INFO BerkeleyDBManager:150 -start merge
+2017-02-12 11:46:02   INFO BerkeleyDBManager:153 -merge fetch database
+2017-02-12 11:46:02   INFO BerkeleyDBManager:164 -merge link database
+2017-02-12 11:46:02   INFO BerkeleyDBManager:174 -end merge
+2017-02-12 11:46:02   INFO Crawler:126 -depth 4 finish: 
+	TOTAL urls:	2
+	TOTAL time:	25 seconds
+2017-02-12 11:46:02   INFO SearchSpider:86 -************360SearchSpider finish************
