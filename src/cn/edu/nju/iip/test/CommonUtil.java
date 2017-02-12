@@ -31,7 +31,7 @@ import com.hankcs.hanlp.tokenizer.NotionalTokenizer;
 
 public class CommonUtil {
 	
-	private static String traindata = "resources/traindata.dat";
+	private static String traindata = "resources/pretrain.data";
 	
 	private static final Logger logger = LoggerFactory.getLogger(CommonUtil.class);
 

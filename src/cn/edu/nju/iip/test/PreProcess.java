@@ -18,9 +18,9 @@ public class PreProcess {
 
 	private static Word2VEC word2vec = new Word2VEC();
 
-	private static String relation2id = "resources/relation2id.dat";
+	private static String relation2id = "resources/relation2id.data";
 
-	private static String traindata = "resources/traindata.dat";
+	private static String traindata = "resources/pretrain.data";
 
 	public static HashMap<String, String> getRelation2id() {
 		HashMap<String, String> relation2idMap = new HashMap<>();
@@ -110,7 +110,7 @@ public class PreProcess {
 	public static void preprocess() {
 		HashMap<String, String> relation2idMap = getRelation2id();
 		try {
-			FileWriter filewriter = new FileWriter("resources/train.dat");
+			FileWriter filewriter = new FileWriter("resources/train.data");
 			BufferedReader in = new BufferedReader(new FileReader(traindata));
 			String line;
 			while ((line = in.readLine()) != null && line.length() != 0) {
