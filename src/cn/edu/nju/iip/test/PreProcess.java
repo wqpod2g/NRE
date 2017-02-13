@@ -115,14 +115,13 @@ public class PreProcess {
 			String line;
 			while ((line = in.readLine()) != null && line.length() != 0) {
 				String[] strs = line.split("\t");
-				//double[] vec = sentence2Vec(strs[3], strs[1], strs[2]);
-				double[] vec = sentence2VecPosEmbding(strs[3], strs[1], strs[2]);
+				double[] vec = sentence2Vec(strs[3], strs[1], strs[2]);
+				//double[] vec = sentence2VecPosEmbding(strs[3], strs[1], strs[2]);
 				String out = "";
 				for (double x : vec) {
 					out = out + x + ",";
 				}
 				out += relation2idMap.get(strs[0]) + "\n";
-				//System.out.println(out);
 				filewriter.write(out);
 			}
 			in.close();

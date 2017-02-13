@@ -11,6 +11,7 @@
  */
 package cn.edu.nju.iip.test;
 
+import com.hankcs.hanlp.dictionary.CustomDictionary;
 import com.hankcs.hanlp.seg.common.Term;
 import com.hankcs.hanlp.tokenizer.NotionalTokenizer;
 
@@ -24,7 +25,8 @@ public class DemoNotionalTokenizer
 {
     public static void main(String[] args)
     {
-        String text = "同时，新车搭载了上汽集团与阿里巴巴合作开发的智能互联系统，将支持智能地图导航、语音识别控制、车机账户互联、4G通信以及车载WIFI等";
+    	CustomDictionary.add("Terra Bella");
+        String text = "内部人士表示，Planet Labs的收购价低于谷歌当时收购Terra Bella时的5亿美元，但这项交易的价格仍在3亿美元以上";
         // 自动去除停用词
         System.out.println(NotionalTokenizer.segment(text));    // 停用词典位于data/dictionary/stopwords.txt，可以自行修改
     }

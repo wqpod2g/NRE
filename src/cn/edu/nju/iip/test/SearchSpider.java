@@ -26,9 +26,9 @@ public class SearchSpider extends BreadthCrawler {
 	
 	//private int count = 0;
 	
-	private String company = "阿里";
+	private String company = "百度";
 	
-	private String keyword = "京东";
+	private String keyword = "董事长";
 	
 	private static FileWriter filewriter;
 	
