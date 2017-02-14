@@ -49,5 +49,9 @@
 	<classpathentry kind="lib" path="libs/hamcrest-core-1.3.jar"/>
 	<classpathentry kind="lib" path="libs/word2vec.jar"/>
 	<classpathentry kind="lib" path="libs/JavaCNN.jar"/>
+	<classpathentry kind="lib" path="libs/NeuralNetwork.jar" sourcepath="C:/Users/mrpod2g/Desktop/NeuralNetwork-1.1.zip"/>
+	<classpathentry kind="lib" path="libs/mtj-1.0-snapshot.jar"/>
+	<classpathentry kind="lib" path="libs/opencsv-2.3.jar"/>
+	<classpathentry kind="lib" path="libs/weka.jar" sourcepath="D:/Program Files/Weka-3-8/weka-src.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
