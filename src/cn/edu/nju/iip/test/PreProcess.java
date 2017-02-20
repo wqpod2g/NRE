@@ -21,6 +21,7 @@ public class PreProcess {
 	private static String relation2id = "resources/relation2id.data";
 
 	private static String traindata = "resources/pretrain.data";
+	
 
 	public static HashMap<String, String> getRelation2id() {
 		HashMap<String, String> relation2idMap = new HashMap<>();
@@ -77,9 +78,13 @@ public class PreProcess {
 		for (int i = 0; i < termList.size(); i++) {
 			if(termList.get(i).word.equals(entity1)) {
 				index1 = i;
+				break;
 			}
+		}
+		for (int i = 0; i < termList.size(); i++) {
 			if(termList.get(i).word.equals(entity2)) {
 				index2 = i;
+				break;
 			}
 		}
 		for (int i = 0; i < termList.size(); i++) {
@@ -110,13 +115,18 @@ public class PreProcess {
 	public static void preprocess() {
 		HashMap<String, String> relation2idMap = getRelation2id();
 		try {
-			FileWriter filewriter = new FileWriter("resources/train.data");
+			FileWriter filewriter = new FileWriter("resources/train.arff");
+			filewriter.write("@relation relation\n");
+			for(int i=0;i<word2vecSize+2;i++) {
+				filewriter.write("@attribute 'X"+i+"' numeric\n");
+			}
+			filewriter.write("@attribute 'class' {0,1,2,3,4,5}\n@data\n");
 			BufferedReader in = new BufferedReader(new FileReader(traindata));
 			String line;
 			while ((line = in.readLine()) != null && line.length() != 0) {
 				String[] strs = line.split("\t");
-				double[] vec = sentence2Vec(strs[3], strs[1], strs[2]);
-				//double[] vec = sentence2VecPosEmbding(strs[3], strs[1], strs[2]);
+				//double[] vec = sentence2Vec(strs[3], strs[1], strs[2]);
+				double[] vec = sentence2VecPosEmbding(strs[3], strs[1], strs[2]);
 				String out = "";
 				for (double x : vec) {
 					out = out + x + ",";
